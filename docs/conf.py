@@ -28,13 +28,13 @@ import os
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = []
+extensions = ['recommonmark']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
 # The suffix of source filenames.
-source_suffix = '.rst'
+source_suffix = '.md'
 
 # The encoding of source files.
 #source_encoding = 'utf-8-sig'
@@ -43,7 +43,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Read the Docs Template'
+project = u'XComponent Servicefull'
 copyright = u'2014, Read the Docs'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -103,7 +103,22 @@ html_theme = 'default'
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
-#html_theme_options = {}
+html_theme_options = {
+    # 'analytics_id': 'UA-XXXXXXX-1',  #  Provided by Google in your dashboard
+    # 'analytics_anonymize_ip': False,
+    # 'logo_only': False,
+    # 'display_version': True,
+    # 'prev_next_buttons_location': 'bottom',
+    # 'style_external_links': False,
+    # 'vcs_pageview_mode': '',
+    # 'style_nav_header_background': 'white',
+    # # Toc options
+    'collapse_navigation': False,
+    # 'sticky_navigation': True,
+    # 'navigation_depth': 4,
+    # 'includehidden': True,
+    # 'titles_only': False
+}
 
 # Add any paths that contain custom themes here, relative to this directory.
 #html_theme_path = []
